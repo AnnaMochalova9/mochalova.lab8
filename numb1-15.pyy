@@ -1,0 +1,9 @@
+n = int(input("Введите кол-во чисел: "))
+nums = []
+for i in range(n):
+    nums.append(float(input("")))
+cnt = 0
+for j in range(n//2):
+    if nums[j] * nums[n-j-1] > 0:
+        cnt += 1
+print(cnt)
